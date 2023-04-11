@@ -1,0 +1,47 @@
+body{
+    background-color:whitesmoke;
+    margin:0 auto;
+  }
+  
+  .container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:4rem
+  }
+  
+  .container .text{
+    position:relative;
+    color:crimson;
+    font-size:2rem;
+    font-weight:600;
+    padding:0 5px;
+  }
+  .container .sec-text{
+    color:black;
+  }
+  
+  .text.sec-text:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:whitesmoke;
+    border-left:5px solid crimson;
+    animation:anime 6s steps(20) infinite;
+    
+    
+  }
+  
+  @keyframes anime{
+    40%,60%{
+     left:100%; 
+    }
+    100%{
+      left:0%;
+    }
+    
+    
+  }
